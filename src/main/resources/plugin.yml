@@ -1,0 +1,16 @@
+name: Limiter
+version: '1.0'
+main: com.astaro.limiter.Limiter
+api-version: '1.21'
+load: STARTUP
+author: Astaro212
+website: https://github.com/Astaro212/Limiter
+description: Simple limiter plugin;
+folia-supported: true
+
+permissions:
+  limiter.admin:
+    description: Grants all permissions.
+    default: op
+    children:
+      - limiter.reload

@@ -1,0 +1,34 @@
+## Limiter by Astaro212
+## You can limit all what you want per chunk
+## Now I have made only for different entities
+## Later I'll add support for block and tile entities.
+## My Discord https://discord.gg/6Q9hGG4EZR
+## Main config of plugin
+# Version
+version: 1.0 # DO NOT TOUCH THIS
+config-version: 1.0 # DO NOT TOUCH THIS
+# Debug? 
+debug: false
+## Entity limit config
+## Limits works so - if in one (main) chunk limit equals 8
+## In nearest  8 chunks, surrounding main chunk limit will be equal 2
+## You can configure it as you want
+# Main chunk entity LIMIT
+main-chunk-limit: 35
+# Neighbour limit (DOES NOT AFFECTS MINECARTS, MINECARTS AFFECTS ONLY MAIN LIMIT)
+neighbour-limit: 15
+
+# Exempts section
+exempts:
+# Setting this to true will allow entities to enter portals
+  portal-enter: false
+# Entities (short id's - zombie, ender_dragon etc)
+  entity:
+    - ender_dragon
+# Whole worlds
+  world:
+    - disabled1
+    - disabled2
+
+messages:
+  limit-reached: "You have reached entity limit for this chunk"
